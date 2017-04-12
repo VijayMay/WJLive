@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B821CAB9CAF906E67186B0CE /* Pods_DouYuTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3184BB84F5EDF0E6AC5FE9 /* Pods_DouYuTV.framework */; };
 		EA3A9F641E95DCCC009FDE59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A9F631E95DCCC009FDE59 /* AppDelegate.swift */; };
 		EA3A9F6B1E95DCCC009FDE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3A9F6A1E95DCCC009FDE59 /* Assets.xcassets */; };
 		EA3A9FB31E9615AC009FDE59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3A9FB11E9615AC009FDE59 /* Main.storyboard */; };
@@ -15,9 +16,13 @@
 		EA3A9FBC1E9615EE009FDE59 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3A9FBA1E9615EE009FDE59 /* Follow.storyboard */; };
 		EA3A9FBF1E9615FF009FDE59 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3A9FBD1E9615FF009FDE59 /* Profile.storyboard */; };
 		EA3A9FC11E96169A009FDE59 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A9FC01E96169A009FDE59 /* MainViewController.swift */; };
+		EA3A9FC31E962636009FDE59 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A9FC21E962636009FDE59 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050CF018FCE879FA71C4519C /* Pods-DouYuTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuTV/Pods-DouYuTV.release.xcconfig"; sourceTree = "<group>"; };
+		6D3184BB84F5EDF0E6AC5FE9 /* Pods_DouYuTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7C3A79FD5B230D30FCCDA8 /* Pods-DouYuTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuTV/Pods-DouYuTV.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3A9F601E95DCCC009FDE59 /* DouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3A9F631E95DCCC009FDE59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3A9F6A1E95DCCC009FDE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		EA3A9FBB1E9615EE009FDE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYuTV/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		EA3A9FBE1E9615FF009FDE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYuTV/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		EA3A9FC01E96169A009FDE59 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EA3A9FC21E962636009FDE59 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B821CAB9CAF906E67186B0CE /* Pods_DouYuTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E53D9C88BAE8D2725C3E543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D3184BB84F5EDF0E6AC5FE9 /* Pods_DouYuTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9018A0169488B8E9EF44069F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D7C3A79FD5B230D30FCCDA8 /* Pods-DouYuTV.debug.xcconfig */,
+				050CF018FCE879FA71C4519C /* Pods-DouYuTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EA3A9F571E95DCCC009FDE59 = {
 			isa = PBXGroup;
 			children = (
 				EA3A9F621E95DCCC009FDE59 /* DouYuTV */,
 				EA3A9F611E95DCCC009FDE59 /* Products */,
+				9018A0169488B8E9EF44069F /* Pods */,
+				4E53D9C88BAE8D2725C3E543 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				EA3A9FB41E9615BF009FDE59 /* Home.storyboard */,
+				EA3A9FC21E962636009FDE59 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -288,9 +315,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA3A9F721E95DCCC009FDE59 /* Build configuration list for PBXNativeTarget "DouYuTV" */;
 			buildPhases = (
+				E20C7FADB43496A89D8BD63B /* [CP] Check Pods Manifest.lock */,
 				EA3A9F5C1E95DCCC009FDE59 /* Sources */,
 				EA3A9F5D1E95DCCC009FDE59 /* Frameworks */,
 				EA3A9F5E1E95DCCC009FDE59 /* Resources */,
+				178F282D6826765A7AC0DDDA /* [CP] Embed Pods Frameworks */,
+				4599181DED8ADB0A8DCA6BC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,6 +381,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		178F282D6826765A7AC0DDDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouYuTV/Pods-DouYuTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4599181DED8ADB0A8DCA6BC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouYuTV/Pods-DouYuTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E20C7FADB43496A89D8BD63B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA3A9F5C1E95DCCC009FDE59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -358,6 +436,7 @@
 			files = (
 				EA3A9F641E95DCCC009FDE59 /* AppDelegate.swift in Sources */,
 				EA3A9FC11E96169A009FDE59 /* MainViewController.swift in Sources */,
+				EA3A9FC31E962636009FDE59 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +579,7 @@
 		};
 		EA3A9F731E95DCCC009FDE59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7C3A79FD5B230D30FCCDA8 /* Pods-DouYuTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -515,6 +595,7 @@
 		};
 		EA3A9F741E95DCCC009FDE59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050CF018FCE879FA71C4519C /* Pods-DouYuTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

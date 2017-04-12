@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-70" y="-475"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="a9g-Mk-c1b">
             <objects>
-                <viewController id="VMY-vK-OvK" sceneMemberID="viewController">
+                <viewController id="VMY-vK-OvK" customClass="HomeViewController" customModule="DouYuTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nvp-fT-Cht"/>
                         <viewControllerLayoutGuide type="bottom" id="Fgn-u2-9lA"/>
@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMg-Wn-VoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="-473"/>
+            <point key="canvasLocation" x="650" y="-475"/>
         </scene>
     </scenes>
     <resources>
