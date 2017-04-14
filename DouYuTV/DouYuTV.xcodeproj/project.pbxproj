@@ -26,6 +26,12 @@
 		EADF43BC1EA05F1E00EA7F07 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43BB1EA05F1E00EA7F07 /* GameViewController.swift */; };
 		EADF43BE1EA05F4000EA7F07 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43BD1EA05F4000EA7F07 /* AmuseViewController.swift */; };
 		EADF43C01EA05F5A00EA7F07 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43BF1EA05F5A00EA7F07 /* FunnyViewController.swift */; };
+		EADF43C31EA066DB00EA7F07 /* NormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43C11EA066DB00EA7F07 /* NormalCell.swift */; };
+		EADF43C41EA066DB00EA7F07 /* NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADF43C21EA066DB00EA7F07 /* NormalCell.xib */; };
+		EADF43C71EA0672900EA7F07 /* PrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43C51EA0672900EA7F07 /* PrettyCell.swift */; };
+		EADF43C81EA0672900EA7F07 /* PrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADF43C61EA0672900EA7F07 /* PrettyCell.xib */; };
+		EADF43CA1EA0807300EA7F07 /* LiveHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43C91EA0807300EA7F07 /* LiveHeadView.swift */; };
+		EADF43CC1EA080D300EA7F07 /* LiveHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADF43CB1EA080D300EA7F07 /* LiveHeadView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,12 @@
 		EADF43BB1EA05F1E00EA7F07 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EADF43BD1EA05F4000EA7F07 /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
 		EADF43BF1EA05F5A00EA7F07 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		EADF43C11EA066DB00EA7F07 /* NormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalCell.swift; sourceTree = "<group>"; };
+		EADF43C21EA066DB00EA7F07 /* NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormalCell.xib; sourceTree = "<group>"; };
+		EADF43C51EA0672900EA7F07 /* PrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyCell.swift; sourceTree = "<group>"; };
+		EADF43C61EA0672900EA7F07 /* PrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrettyCell.xib; sourceTree = "<group>"; };
+		EADF43C91EA0807300EA7F07 /* LiveHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveHeadView.swift; sourceTree = "<group>"; };
+		EADF43CB1EA080D300EA7F07 /* LiveHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveHeadView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +219,12 @@
 		EA3A9F8D1E960195009FDE59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EADF43C11EA066DB00EA7F07 /* NormalCell.swift */,
+				EADF43C21EA066DB00EA7F07 /* NormalCell.xib */,
+				EADF43C51EA0672900EA7F07 /* PrettyCell.swift */,
+				EADF43C61EA0672900EA7F07 /* PrettyCell.xib */,
+				EADF43C91EA0807300EA7F07 /* LiveHeadView.swift */,
+				EADF43CB1EA080D300EA7F07 /* LiveHeadView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,12 +433,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EADF43C41EA066DB00EA7F07 /* NormalCell.xib in Resources */,
 				EA3A9FBF1E9615FF009FDE59 /* Profile.storyboard in Resources */,
 				EA3A9FBC1E9615EE009FDE59 /* Follow.storyboard in Resources */,
 				EA3A9FB61E9615BF009FDE59 /* Home.storyboard in Resources */,
 				EA3A9F6B1E95DCCC009FDE59 /* Assets.xcassets in Resources */,
 				EA3A9FB91E9615CE009FDE59 /* Live.storyboard in Resources */,
+				EADF43CC1EA080D300EA7F07 /* LiveHeadView.xib in Resources */,
 				EA3A9FB31E9615AC009FDE59 /* Main.storyboard in Resources */,
+				EADF43C81EA0672900EA7F07 /* PrettyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,12 +502,15 @@
 			files = (
 				EADF43BC1EA05F1E00EA7F07 /* GameViewController.swift in Sources */,
 				EADF43B41E9E0C7D00EA7F07 /* PageTitleView.swift in Sources */,
+				EADF43C31EA066DB00EA7F07 /* NormalCell.swift in Sources */,
 				EA3A9F641E95DCCC009FDE59 /* AppDelegate.swift in Sources */,
+				EADF43CA1EA0807300EA7F07 /* LiveHeadView.swift in Sources */,
 				EADF43BA1EA05F0400EA7F07 /* RecommendViewController.swift in Sources */,
 				EADF43B21E9E04EE00EA7F07 /* UIColor-Extension.swift in Sources */,
 				EADF43B81E9F5F8B00EA7F07 /* PageContentView.swift in Sources */,
 				EA3A9FC11E96169A009FDE59 /* MainViewController.swift in Sources */,
 				EADF43B01E9E00F300EA7F07 /* UIBarButtonItem-Extension.swift in Sources */,
+				EADF43C71EA0672900EA7F07 /* PrettyCell.swift in Sources */,
 				EA3A9FC31E962636009FDE59 /* HomeViewController.swift in Sources */,
 				EADF43BE1EA05F4000EA7F07 /* AmuseViewController.swift in Sources */,
 				EADF43B61E9F293A00EA7F07 /* Common.swift in Sources */,

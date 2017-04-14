@@ -8,13 +8,108 @@
 
 import UIKit
 
+private let kCellMargin : CGFloat = 10
+private let kNormalCellW = (kScreenW - 3*kCellMargin)/2.0
+private let kNormalCellH = kNormalCellW * 3/4
+private let kPrettyCellH = kNormalCellW * 4/3
+private let kHeadViewH : CGFloat = 50.0
+
+private let kNormalCellID = "kNormalCellID"
+private let kPrettyCellID = "kPrettyCellID"
+private let kLiveHeadViewID = "kLiveHeadViewID"
+
+
 class RecommendViewController: UIViewController {
 
+    // MARK:- 懒加载属性
+    fileprivate lazy var collectionView : UICollectionView = {[weak self] in
+    
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = kCellMargin
+        layout.itemSize = CGSize(width: kNormalCellW, height: kNormalCellH)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: kCellMargin, bottom: 0, right: kCellMargin)
+        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeadViewH)
+        let collectionView = UICollectionView(frame: (self?.view.frame)!, collectionViewLayout: layout)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.backgroundColor = UIColor.white
+        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        collectionView.register(UINib (nibName: "NormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
+        collectionView.register(UINib (nibName: "PrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
+        collectionView.register(UINib (nibName: "LiveHeadView", bundle:nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kLiveHeadViewID)
+        
+        return collectionView
+    }()
+    // MARK:-系统回调方法
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.purple
+        setupUI()
+
     }
     
-
-
 }
+
+// MARK:- 添加子试图
+extension RecommendViewController {
+
+    fileprivate func setupUI(){
+        
+        view.addSubview(collectionView)
+        
+    }
+}
+
+// MARK:- UICollectionViewDataSource
+extension RecommendViewController : UICollectionViewDataSource{
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        
+        return 12
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+        
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let headView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kLiveHeadViewID, for: indexPath) as! LiveHeadView
+        
+        return headView
+    }
+}
+
+// MARK:- 
+extension RecommendViewController : UICollectionViewDelegate{
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("第\(indexPath.section)组 第\(indexPath.item)个")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
