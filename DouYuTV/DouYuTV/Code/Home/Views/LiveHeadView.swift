@@ -10,6 +10,8 @@ import UIKit
 
 class LiveHeadView: UICollectionReusableView {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var iconImgView: UIImageView!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -17,5 +19,18 @@ class LiveHeadView: UICollectionReusableView {
         // Drawing code
     }
     */
+    
+    var group : AnchorGroup? {
+        
+        didSet{
+            
+           guard let group = group else { return }
+            
+            titleLabel.text = group.tag_name
+            iconImgView.image = UIImage(named: group.icon_name)
+            
+        }
+    }
+    
 
 }

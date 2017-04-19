@@ -45,27 +45,27 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="DHz-FO-wcj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="6666在线" image="Image_online">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蜗牛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhQ-It-gGr">
-                                <rect key="frame" x="5" y="8" width="152" height="15"/>
+                                <rect key="frame" x="5" y="8" width="141.5" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="ecD-IY-tjy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="yhQ-It-gGr" firstAttribute="leading" secondItem="krI-T1-cUg" secondAttribute="leading" constant="5" id="4AS-kH-M6f"/>
                             <constraint firstAttribute="bottom" secondItem="eDN-kW-q2h" secondAttribute="bottom" constant="5" id="87x-iH-bLA"/>
                             <constraint firstAttribute="trailing" secondItem="eDN-kW-q2h" secondAttribute="trailing" constant="5" id="Cci-0N-e9G"/>
-                            <constraint firstItem="yhQ-It-gGr" firstAttribute="width" secondItem="krI-T1-cUg" secondAttribute="width" multiplier="0.6" id="g0g-WJ-L3i"/>
+                            <constraint firstItem="yhQ-It-gGr" firstAttribute="width" secondItem="krI-T1-cUg" secondAttribute="width" multiplier="0.56" id="g0g-WJ-L3i"/>
                             <constraint firstItem="eDN-kW-q2h" firstAttribute="width" secondItem="krI-T1-cUg" secondAttribute="width" multiplier="0.4" id="iwN-Sw-lFf"/>
                             <constraint firstAttribute="bottom" secondItem="yhQ-It-gGr" secondAttribute="bottom" constant="5" id="s7w-OL-4w2"/>
                             <constraint firstAttribute="height" constant="28" id="tWr-c1-KOy"/>
@@ -87,6 +87,12 @@
                 <constraint firstItem="krI-T1-cUg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tim-SB-b2q"/>
                 <constraint firstItem="kd0-8Z-DdY" firstAttribute="leading" secondItem="gSI-Bj-UHy" secondAttribute="trailing" constant="5" id="vOM-qg-V3D"/>
             </constraints>
+            <connections>
+                <outlet property="bgImgView" destination="qym-Zm-k5B" id="05f-vc-3fg"/>
+                <outlet property="nickNameLabel" destination="yhQ-It-gGr" id="Jyf-GN-K7N"/>
+                <outlet property="onLineBtn" destination="eDN-kW-q2h" id="HzP-6g-krY"/>
+                <outlet property="titelLabel" destination="kd0-8Z-DdY" id="6x3-gX-O3D"/>
+            </connections>
             <point key="canvasLocation" x="11.5" y="94"/>
         </collectionViewCell>
     </objects>

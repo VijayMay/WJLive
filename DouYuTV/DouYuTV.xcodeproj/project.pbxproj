@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B821CAB9CAF906E67186B0CE /* Pods_DouYuTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3184BB84F5EDF0E6AC5FE9 /* Pods_DouYuTV.framework */; };
+		EA3236D01EA5F19E007B7AE9 /* NSDate-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3236CF1EA5F19E007B7AE9 /* NSDate-Extenstion.swift */; };
 		EA3A9F641E95DCCC009FDE59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3A9F631E95DCCC009FDE59 /* AppDelegate.swift */; };
 		EA3A9F6B1E95DCCC009FDE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3A9F6A1E95DCCC009FDE59 /* Assets.xcassets */; };
 		EA3A9FB31E9615AC009FDE59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3A9FB11E9615AC009FDE59 /* Main.storyboard */; };
@@ -32,12 +33,17 @@
 		EADF43C81EA0672900EA7F07 /* PrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADF43C61EA0672900EA7F07 /* PrettyCell.xib */; };
 		EADF43CA1EA0807300EA7F07 /* LiveHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43C91EA0807300EA7F07 /* LiveHeadView.swift */; };
 		EADF43CC1EA080D300EA7F07 /* LiveHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADF43CB1EA080D300EA7F07 /* LiveHeadView.xib */; };
+		EADF43CE1EA08F5900EA7F07 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43CD1EA08F5900EA7F07 /* RecommendViewModel.swift */; };
+		EADF43D01EA08FB800EA7F07 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43CF1EA08FB800EA7F07 /* NetworkTools.swift */; };
+		EADF43D21EA0934900EA7F07 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43D11EA0934900EA7F07 /* AnchorGroup.swift */; };
+		EADF43D41EA0937D00EA7F07 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADF43D31EA0937D00EA7F07 /* AnchorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		050CF018FCE879FA71C4519C /* Pods-DouYuTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuTV/Pods-DouYuTV.release.xcconfig"; sourceTree = "<group>"; };
 		6D3184BB84F5EDF0E6AC5FE9 /* Pods_DouYuTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7C3A79FD5B230D30FCCDA8 /* Pods-DouYuTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuTV/Pods-DouYuTV.debug.xcconfig"; sourceTree = "<group>"; };
+		EA3236CF1EA5F19E007B7AE9 /* NSDate-Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extenstion.swift"; sourceTree = "<group>"; };
 		EA3A9F601E95DCCC009FDE59 /* DouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3A9F631E95DCCC009FDE59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA3A9F6A1E95DCCC009FDE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +70,10 @@
 		EADF43C61EA0672900EA7F07 /* PrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrettyCell.xib; sourceTree = "<group>"; };
 		EADF43C91EA0807300EA7F07 /* LiveHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveHeadView.swift; sourceTree = "<group>"; };
 		EADF43CB1EA080D300EA7F07 /* LiveHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveHeadView.xib; sourceTree = "<group>"; };
+		EADF43CD1EA08F5900EA7F07 /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		EADF43CF1EA08FB800EA7F07 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		EADF43D11EA0934900EA7F07 /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		EADF43D31EA0937D00EA7F07 /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +215,8 @@
 		EA3A9F8B1E960195009FDE59 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EADF43D11EA0934900EA7F07 /* AnchorGroup.swift */,
+				EADF43D31EA0937D00EA7F07 /* AnchorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +224,7 @@
 		EA3A9F8C1E960195009FDE59 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EADF43CD1EA08F5900EA7F07 /* RecommendViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -357,6 +370,8 @@
 			children = (
 				EADF43AE1E9E009A00EA7F07 /* Extension */,
 				EADF43B51E9F293A00EA7F07 /* Common.swift */,
+				EADF43CF1EA08FB800EA7F07 /* NetworkTools.swift */,
+				EA3236CF1EA5F19E007B7AE9 /* NSDate-Extenstion.swift */,
 			);
 			name = Tools;
 			path = ../Tools;
@@ -501,14 +516,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EADF43BC1EA05F1E00EA7F07 /* GameViewController.swift in Sources */,
+				EADF43D01EA08FB800EA7F07 /* NetworkTools.swift in Sources */,
+				EADF43D41EA0937D00EA7F07 /* AnchorModel.swift in Sources */,
+				EA3236D01EA5F19E007B7AE9 /* NSDate-Extenstion.swift in Sources */,
 				EADF43B41E9E0C7D00EA7F07 /* PageTitleView.swift in Sources */,
 				EADF43C31EA066DB00EA7F07 /* NormalCell.swift in Sources */,
 				EA3A9F641E95DCCC009FDE59 /* AppDelegate.swift in Sources */,
 				EADF43CA1EA0807300EA7F07 /* LiveHeadView.swift in Sources */,
+				EADF43D21EA0934900EA7F07 /* AnchorGroup.swift in Sources */,
 				EADF43BA1EA05F0400EA7F07 /* RecommendViewController.swift in Sources */,
 				EADF43B21E9E04EE00EA7F07 /* UIColor-Extension.swift in Sources */,
 				EADF43B81E9F5F8B00EA7F07 /* PageContentView.swift in Sources */,
 				EA3A9FC11E96169A009FDE59 /* MainViewController.swift in Sources */,
+				EADF43CE1EA08F5900EA7F07 /* RecommendViewModel.swift in Sources */,
 				EADF43B01E9E00F300EA7F07 /* UIBarButtonItem-Extension.swift in Sources */,
 				EADF43C71EA0672900EA7F07 /* PrettyCell.swift in Sources */,
 				EA3A9FC31E962636009FDE59 /* HomeViewController.swift in Sources */,
